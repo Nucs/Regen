@@ -4,10 +4,11 @@ Regen as a template compiler/engine allows to expand in-line templates to be com
 
 **Current version:** 0.27a-2<br>
 
-Regen comes with a handy Visual Studio plugin which compiles embedded `regen-lang` templates in your C# source files. 
+-----
 
 ### Getting Started
-Make sure to read our [getting started](TUTORIAL.md) page for in-depth language introduction!
+Regen provides a handy Visual Studio plugin which compiles embedded `regen-lang` templates in your C# source files. 
+For an in-depth language introduction, make sure to read our [getting started](TUTORIAL.md) page!
 
 ### Installation
 Regen is shipped as a visual studio extension (VSIX) and currently supports `vs2017` and `vs2019`.<br>
