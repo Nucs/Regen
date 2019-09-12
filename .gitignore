@@ -328,3 +328,9 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+#TestResults directory
+TestResults/*
+src/Regen.Core/testfile.cs
+!releases/
+test/Regen.Core.UnitTest/DevelopmentTests.cs
