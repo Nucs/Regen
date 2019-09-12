@@ -13,7 +13,7 @@ If you rather learn from examples, please refer to UnitTests/Examples/ (STILL WI
 
 #### Installation
 //todo nuget package for Regen.Core<br>
-Official vs-extension releases can be downloaded [here](https://github.com/SciSharp/CodeMinion/tree/master/src/Regen.Package/releases)
+Official vs-extension releases can be downloaded [here](https://github.com/Nucs/Regen/tree/master/releases)
 
 ##### Visual Studio Extension 
 A code frame / template block inside a C# code looks like this:
@@ -358,7 +358,7 @@ public class Convert__1__ { }
 First file (out of 2) will output as `"./int/filename.INT.cs"` relative to the template file path.<br>
 `__n__` are similar to `#n` inside a foreach loop resulting the first file as:<br>
 `public class ConvertINT { }`<br><br>
-Example file: [test/Regen.Core.UnitTest/Package/tempfilename.template.cs](../../test/Regen.Core.UnitTest/Package/tempfilename.template.cs)
+Example file: [test/Regen.Core.UnitTest/Package/tempfilename.template.cs](test/Regen.Core.UnitTest/Package/tempfilename.template.cs)
 
 The logic-flow is as follows:
 1. The template file is compiled and all `__n__` literals are replaced with their corresponding value.

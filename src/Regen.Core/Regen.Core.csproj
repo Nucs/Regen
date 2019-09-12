@@ -208,11 +208,9 @@
     <Compile Include="DataTypes\StringScalar.cs" />
     <Compile Include="Exceptions\UnexpectedTokenException.cs" />
     <None Include="packages.config" />
-    <None Include="TUTORIAL.md" />
     <None Include="testfile.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -229,9 +227,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="TODO.md" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Regen.Flee\Regen.Flee.csproj">
