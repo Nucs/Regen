@@ -66,7 +66,7 @@ What can I write inside an expression? Anything that works with Flee which cover
 <u>Not supported features</u>: `new`, `throw`, explicit casting, `as`, `is`, `??`, ternery expressions, generics, `sizeof`, `await`
 
 #### Variables and Type System
-Regen has it's own type system ([See More](./DataTypes)) with an abstract base class [Data](./DataTypes/Data.cs).<br>
+Regen has it's own type system ([See More](src/Regen.Core/DataTypes)) with an abstract base class [Data](src/Regen.Core/DataTypes/Data.cs).<br>
 To the user it is mostly transparent.<br>
 
 
