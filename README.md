@@ -1,5 +1,5 @@
 # Regen
-Regen is an intuitive, fast, in-code templating engine based on a C#-Python like regen-lang created to replace T4 Templating.<br>
+Regen is an intuitive in-code templating engine based on a C#-Python like regen-lang created to replace T4 Templating.<br>
 Regen as a template compiler/engine allows to expand in-line templates to be compiled into C# code and inserted into the same source file.<br>
 It is mainly used to generate repetitive code - for instance the efficient handling of primitive types without boxing requires a branch for every type that executes the same operation. 
 
