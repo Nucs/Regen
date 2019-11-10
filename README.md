@@ -6,7 +6,7 @@ It is mainly used to generate repetitive code - for instance the efficient handl
 **Current version:** 0.27a-2<br>
 
 -----
-<img src="resources/quickexample.gif" height=300 width=300/>
+<img src="resources/quickexample.gif" height=350 width=500 />
 
 ### Getting Started
 Regen provides a handy Visual Studio plugin which compiles embedded `regen-lang` templates in your C# source files. 
