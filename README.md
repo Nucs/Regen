@@ -5,16 +5,16 @@ It is mainly used to generate repetitive code - for instance the efficient handl
 
 **Current version:** 0.27a-2<br>
 
------
-<img src="resources/quickexample.gif" height=350 width=500 />
+### Installation
+Regen is shipped as a visual studio extension (VSIX) and currently supports `vs2017` and `vs2019`.<br>
+Official releases can be downloaded [here](https://github.com/Nucs/Regen/tree/master/releases) or in the [releases page](https://github.com/Nucs/Regen/releases).<br>
 
 ### Getting Started
 Regen provides a handy Visual Studio plugin which compiles embedded `regen-lang` templates in your C# source files. 
 For an in-depth language introduction, make sure to read our [getting started](TUTORIAL.md) page!
-
-### Installation
-Regen is shipped as a visual studio extension (VSIX) and currently supports `vs2017` and `vs2019`.<br>
-Official releases can be downloaded [here](https://github.com/Nucs/Regen/tree/master/releases) or in the [releases page](https://github.com/Nucs/Regen/releases).<br>
+<p align="center">
+  <img align="center" src="resources/quickexample.gif" height=350 width=500 />
+</p>
 
 ### Contributions
 Contributions are welcome, if you would like to help: check out our [TODO page](TODO.md).<br>
