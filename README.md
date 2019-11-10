@@ -13,7 +13,8 @@ Official releases can be downloaded [here](https://github.com/Nucs/Regen/tree/ma
 Regen provides a handy Visual Studio plugin which compiles embedded `regen-lang` templates in your C# source files. 
 For an in-depth language introduction, make sure to read our [getting started](TUTORIAL.md) page!
 <p align="center">
-  <img align="center" src="resources/quickexample.gif" height=350 width=500 />
+  <img align="center" src="resources/quickexample.gif" height=300 width=420 />
+  <img align="center" src="resources/quickexample-2.gif" height=300 width=420 />
 </p>
 
 ### Contributions
