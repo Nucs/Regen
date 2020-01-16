@@ -170,6 +170,56 @@ Note: If you'll try to declare a variable named `i`, it'll throw a compilation e
         Console.Writeline("#(i) = 2, #1 = 3");
 #endif
 ```
+#### Nested Foreach Loops
+Consider the following example:
+```python
+%foreach ["a", "b", "c"], ["e", "f", "g"]%
+%foreach ["A","B","C"],  ["E","F","G"]%
+%foreach ["1","2","3"],  ["4","5","6"]%
+    //#1 [a-c], #2 [e-g] //#101 [A-C], #102 [E-G] //#201 [1-3], #202 [4-6]
+%
+%
+%
+```
+Output:
+```
+    //a [a-c], e [e-g] //A [A-C], E [E-G] //1 [1-3], 4 [4-6]
+    //a [a-c], e [e-g] //A [A-C], E [E-G] //2 [1-3], 5 [4-6]
+    //a [a-c], e [e-g] //A [A-C], E [E-G] //3 [1-3], 6 [4-6]
+    //a [a-c], e [e-g] //B [A-C], F [E-G] //1 [1-3], 4 [4-6]
+    //a [a-c], e [e-g] //B [A-C], F [E-G] //2 [1-3], 5 [4-6]
+    //a [a-c], e [e-g] //B [A-C], F [E-G] //3 [1-3], 6 [4-6]
+    //a [a-c], e [e-g] //C [A-C], G [E-G] //1 [1-3], 4 [4-6]
+    //a [a-c], e [e-g] //C [A-C], G [E-G] //2 [1-3], 5 [4-6]
+    //a [a-c], e [e-g] //C [A-C], G [E-G] //3 [1-3], 6 [4-6]
+    //b [a-c], f [e-g] //A [A-C], E [E-G] //1 [1-3], 4 [4-6]
+    //b [a-c], f [e-g] //A [A-C], E [E-G] //2 [1-3], 5 [4-6]
+    //b [a-c], f [e-g] //A [A-C], E [E-G] //3 [1-3], 6 [4-6]
+    //b [a-c], f [e-g] //B [A-C], F [E-G] //1 [1-3], 4 [4-6]
+    //b [a-c], f [e-g] //B [A-C], F [E-G] //2 [1-3], 5 [4-6]
+    //b [a-c], f [e-g] //B [A-C], F [E-G] //3 [1-3], 6 [4-6]
+    //b [a-c], f [e-g] //C [A-C], G [E-G] //1 [1-3], 4 [4-6]
+    //b [a-c], f [e-g] //C [A-C], G [E-G] //2 [1-3], 5 [4-6]
+    //b [a-c], f [e-g] //C [A-C], G [E-G] //3 [1-3], 6 [4-6]
+    //c [a-c], g [e-g] //A [A-C], E [E-G] //1 [1-3], 4 [4-6]
+    //c [a-c], g [e-g] //A [A-C], E [E-G] //2 [1-3], 5 [4-6]
+    //c [a-c], g [e-g] //A [A-C], E [E-G] //3 [1-3], 6 [4-6]
+    //c [a-c], g [e-g] //B [A-C], F [E-G] //1 [1-3], 4 [4-6]
+    //c [a-c], g [e-g] //B [A-C], F [E-G] //2 [1-3], 5 [4-6]
+    //c [a-c], g [e-g] //B [A-C], F [E-G] //3 [1-3], 6 [4-6]
+    //c [a-c], g [e-g] //C [A-C], G [E-G] //1 [1-3], 4 [4-6]
+    //c [a-c], g [e-g] //C [A-C], G [E-G] //2 [1-3], 5 [4-6]
+    //c [a-c], g [e-g] //C [A-C], G [E-G] //3 [1-3], 6 [4-6]
+```
+
+Structure: Every foreach in the example above has two arrays. the arrays are iterated simultaneously in a zipped manner with the same `i` index as can be seen in the output above. this is useful if you have two arrays that are needed coupled; e.g. name and age.
+
+Accessing: The first foreach arrays are access by #xx, second is accessed by %1xx, third will be accessed by %2xx.
+
+
+#### Real-use examples
+- [Search _REGEN in NumSharp](https://github.com/SciSharp/NumSharp/search?q=_REGEN&unscoped_q=_REGEN)
+
 
 #### Advanced Examples
 ```C#
